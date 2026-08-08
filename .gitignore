@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated plots
+plots/
+
+# Logs
+logs/
+*.log
+
+# Old / archived versions
+old_versions/
+
+# Saved scan results / generated data
+*.pkl
+*.pickle
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Specific generated files
+plots.zip
+console_output.txt
