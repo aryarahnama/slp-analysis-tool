@@ -7,13 +7,14 @@ The application was designed with a focus on **modularity, scalability, and repr
 ## Features
 
 - **Recursive SLP scanning**
-  - Recursively searches directories for `.slp` replay files.
+  - Recursively searches directories for `.slp replay files.
   - Supports replay collections organized across nested directories.
   - Can process an individual replay file directly.
 
 - **Compressed replay support**
   - Processes standard `.slp` files.
-  - Supports `.zip` archives containing replay files.
+  - Processes GZIP-compressed Slippi replay files `.slp.gz`.
+  - Supports `.zip` archives containing replay files (`.slp` or `.slp.gz`).
   - Supports compressed replay formats without requiring the user to manually extract them.
 
 - **Gameplay metric extraction**
@@ -131,8 +132,8 @@ The saved results can then be used for subsequent analysis without repeating the
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/aryarahnama/slp-analysis-tool.git
+cd slp-analysis-tool
 ```
 
 ### 2. Create a Python virtual environment
