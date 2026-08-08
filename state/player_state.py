@@ -168,6 +168,8 @@ class PlayerState:
         Returns:
             True if the three frames contain a dash-turn-dash sequence or
             three consecutive dashing actions (ucf dashback).
+
+        Credit: Fizzi/Slippi
         """
 
         a, b, c = last3
@@ -182,6 +184,8 @@ class PlayerState:
         Returns:
             True if the frames contain a dash-to-turn transition followed
             by an action other than dashing.
+
+        Credit: cbartsch/slippic
         """
 
         a, b, c = last3
@@ -293,6 +297,8 @@ class PlayerState:
         Returns:
             True if the animation is an air dodge or an animation within
             the aerial action range that can initiate a wavedash.
+
+        Credit: Fizzi/Slippi
         """
 
         return (animation == melee.Action.AIRDODGE.value) or (melee.Action.KNEE_BEND.value <= animation <= melee.Action.FALLING_AERIAL_BACKWARD.value)
@@ -325,6 +331,8 @@ class PlayerState:
             dead zone, ``N``, ``S``, ``E``, or ``W`` for cardinal directions,
             ``NE``, ``NW``, ``SE``, or ``SW`` for diagonals, or ``TILT`` for
             inputs that do not meet the thresholds for another region.
+
+        Credit: altf4/enforcer 
         """
 
         dz = DZ_THRESHOLD_COORD
@@ -362,6 +370,8 @@ class PlayerState:
 
         Returns:
             True if the region represents a cardinal direction.
+
+        Credit: altf4/enforcer
         """
 
         return region in ("N", "S", "E", "W")
@@ -374,6 +384,8 @@ class PlayerState:
 
         Returns:
             True if the region represents a diagonal direction.
+
+        Credit: altf4/enforcer
         """
 
         return region in ("NE", "NW", "SE", "SW")
@@ -388,6 +400,8 @@ class PlayerState:
         Returns:
             True if the two regions are adjacent cardinal and diagonal
             directions.
+
+        Credit: altf4/enforcer
         """
 
         cardinal_to_diagonal = {
@@ -421,6 +435,8 @@ class PlayerState:
 
         Returns:
             True if the two diagonal regions are adjacent.
+
+        Credit: altf4/enforcer
         """
 
         diagonal_adjacency = {
@@ -448,6 +464,8 @@ class PlayerState:
 
         Returns:
             True if the transition satisfies the valid SDI transition rules.
+
+        Credit: altf4/enforcer
         """
 
         # Rule 1: neutral -> cardinal
@@ -624,6 +642,8 @@ class PlayerState:
 
         Returns:
             True if the current frame represents the start of a new action.
+
+        Credit: Fizzi/Slippi
         """
 
         return (current_anim != previous_anim) or (previous_frame_counter > current_frame_counter)
@@ -686,6 +706,8 @@ class PlayerState:
             Increments ``wavedash_count`` and records the wavedash duration
             and angle when a wavedash is detected. Increments
             ``waveland_count`` when the sequence is classified as a waveland.
+
+        Credit: Fizzi/Slippi
         """
 
         if len(self.animations) < 2:
@@ -1055,6 +1077,8 @@ class PlayerState:
 
             Sets ``max_galint`` and ``mean_galint`` to the maximum and mean
             galint values, respectively.
+
+        Credit: cbartsch/slippic
         """
 
         galint = 0
