@@ -19,6 +19,8 @@ def is_in_deadzone(x, y):
     Returns:
         True if both coordinates are within the configured deadzone
         threshold, otherwise False.
+
+    Credit: altf4/enforcer
     """
 
     return abs(x) < DZ_THRESHOLD_COORD and abs(y) < DZ_THRESHOLD_COORD
@@ -42,6 +44,8 @@ def is_handwarmer(coords_by_port, stocks_by_port, min_seconds=SECONDS_PER_MINUTE
     Returns:
         True if the replay meets the criteria for a handwarmer, otherwise
         False.
+
+    Credit: altf4/enforcer
     """
 
     if not coords_by_port:
@@ -187,6 +191,8 @@ def count_small_off_axis_coords(coords):
             count: Total number of coordinates meeting the off-axis
                 criterion.
             unique_count: Number of unique coordinates meeting the criterion.
+
+    Credit: altf4/enforcer
     """
 
     count = 0
@@ -213,6 +219,8 @@ def count_rim_coords(coords):
 
     Returns:
         The number of unique coordinates located on or beyond the stick rim.
+
+    Credit: altf4/enforcer
     """
 
     rim_coords = set()
@@ -240,6 +248,8 @@ def is_digital_controller(coords):
     Returns:
         True if the stick input meets the configured digital-controller
         criteria, otherwise False.
+
+    Credit: altf4/enforcer
     """
 
     if not coords:
