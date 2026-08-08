@@ -241,7 +241,3 @@ if __name__ == "__main__":
     print(f"\nTotal runtime: {format_time(elapsed)} ({elapsed:.2f}s)")
     
     logging.shutdown()
-
-# python main.py -d "D:\Slippi\Replays\2026\2026-03" -a controller -r -p -s
-
-# https://docs.google.com/document/d/1abMqoatAGh_ZhQD1qJaQx6YqFAppCjU5KyF3mgvDQVw as a reference for what techniques i should aim to measure
