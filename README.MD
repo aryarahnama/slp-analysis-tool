@@ -7,7 +7,7 @@ The application was designed with a focus on **modularity, scalability, and repr
 ## Features
 
 - **Recursive SLP scanning**
-  - Recursively searches directories for `.slp replay files.
+  - Recursively searches directories for `.slp` replay files.
   - Supports replay collections organized across nested directories.
   - Can process an individual replay file directly.
 
@@ -25,7 +25,7 @@ The application was designed with a focus on **modularity, scalability, and repr
     - Wavedashes
     - Wavelands
     - Ledgedashes
-    - Galint
+    - GALINT
     - SDI
     - Early aerial timing
     - Other frame-level gameplay measurements
