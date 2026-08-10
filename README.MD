@@ -410,9 +410,9 @@ For example:
 plots/
 └── characters/
     ├── Fox/
-    │   ├── nair_1_analog.png
-    │   ├── nair_1_digital.png
-    │   ├── nair_1_overlay.png
+    │   ├── bair_frames_analog.png
+    │   ├── bair_frames_digital.png
+    │   ├── bair_frames_overlay.png
     │   └── ...
     └── Marth/
         └── ...
